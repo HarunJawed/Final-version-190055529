@@ -7,6 +7,9 @@
 -- Purpose       : To show write procedural programs in VHDL
 --               : and provide a starting point for the design exercise
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 use IEEE.std_logic_1164.all;

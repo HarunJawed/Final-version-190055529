@@ -8,6 +8,9 @@
 -- Demonstration of an assembler in VHDL
 -- writes instruction list to a file of std_logic_vector
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 

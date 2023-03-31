@@ -10,6 +10,9 @@
 -- Suggestions Where additional VHDL may be needed will be
 -- marked with a comment starting with TODO:
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 

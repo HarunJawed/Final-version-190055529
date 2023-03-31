@@ -13,6 +13,9 @@
 -- Values which students must make decisions on and complete are marked <??>
 -- and the lines will be commented out
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 use IEEE.std_logic_1164.all;

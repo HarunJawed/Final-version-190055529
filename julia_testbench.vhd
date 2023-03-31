@@ -8,6 +8,9 @@
 -- Testbench runs julia_mp in simulation
 -- allowing debugging.
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 

@@ -6,6 +6,9 @@
 --------------------------------------------------------------------------------
 -- Purpose       : Provides ALU implementation
 --------------------------------------------------------------------------------
+-- EE4DSH 2022 Term 2
+-- Name: Harun Jawed
+-- Collaborators: Phil Rosario, Shiv Tailor
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
