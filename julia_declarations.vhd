@@ -46,7 +46,7 @@ package julia_declarations is
   -- uses variables and a loop
   
   -- TODO:
-  constant num_reg : positive := 15; -- the number of registers in architecture
+  constant num_reg : positive := 14; -- the number of registers in architecture
   
   type opcode is (op_halt, op_nop, op_jmp, op_jmp_lt, op_jmp_eq, op_jmp_nz,
                   op_load, op_fixed_load, op_add, op_addi, op_sub, op_mul, op_fixed_mul, op_shrl,
