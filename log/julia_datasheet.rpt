@@ -1,0 +1,45 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Fri Mar 31 12:24:06 2023
+| Host         : 04021PodB running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_datasheet -file log/julia_datasheet.rpt
+| Design       : julia
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------
+
+Data Sheet Report
+
+Input Ports Setup/Hold
+
+------------+-------+---------+-------+---------------+---------+---------------+---------+----------+
+Reference   | Input | IO Reg  | Delay |     Setup(ns) | Process |      Hold(ns) | Process | Internal |
+Clock       | Port  | Type    | Type  | to Clk (Edge) | Corner  | to Clk (Edge) | Corner  | Clock    |
+------------+-------+---------+-------+---------------+---------+---------------+---------+----------+
+sys_clk_pin | reset | FDRE    | -     |     3.661 (r) | SLOW    |     2.875 (r) | SLOW    |          |
+------------+-------+---------+-------+---------------+---------+---------------+---------+----------+
+
+
+Output Ports Clock-to-out
+
+------------+--------+--------+-------+----------------+---------+----------------+---------+----------+
+Reference   | Output | IO Reg | Delay | Max Clk (Edge) | Process | Min Clk (Edge) | Process | Internal |
+Clock       | Port   | Type   | Type  |    to port(ns) | Corner  |    to port(ns) | Corner  | Clock    |
+------------+--------+--------+-------+----------------+---------+----------------+---------+----------+
+sys_clk_pin | Hsync  | FDRE   | -     |     13.079 (r) | SLOW    |      3.823 (r) | FAST    |          |
+sys_clk_pin | Vsync  | FDRE   | -     |     13.667 (r) | SLOW    |      3.968 (r) | FAST    |          |
+sys_clk_pin | hlt    | FDRE   | -     |     10.890 (r) | SLOW    |      3.186 (r) | FAST    |          |
+------------+--------+--------+-------+----------------+---------+----------------+---------+----------+
+
+
+Setup between Clocks
+
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+Source      | Destination |  Src:Rise     | Process |  Src:Rise     | Process |  Src:Fall     | Process |  Src:Fall     | Process |
+Clock       | Clock       | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  |
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+sys_clk_pin | sys_clk_pin |        19.540 | SLOW    |               |         |               |         |               |         |
+------------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+
+

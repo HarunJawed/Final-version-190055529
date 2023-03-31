@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 30 18:06:26 2023
+# Process ID: 29896
+# Current directory: /users/1/190055529/DSH - FINAL YEAR/NEW VERSION USING A
+# Command line: vivado -log log/julia_prog.log -nojournal -tempDir work -mode tcl
+# Log file: /users/1/190055529/DSH - FINAL YEAR/NEW VERSION USING A/log/julia_prog.log
+# Journal file: 
+#-----------------------------------------------------------
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+set_property BITSTREAM.STARTUP.STARTUPCLK CCLK [current_design]
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+current_hw_device [lindex [get_hw_devices] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+ERROR: [Labtoolstcl 44-5] Could not find current or explicit device for command
+set_property PROGRAM.FILE {julia.bit} [lindex [get_hw_devices] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+program_hw_devices [lindex [get_hw_devices] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+ERROR: [Common 17-161] Invalid option value '' specified for 'hw_device'.
+close_hw_target
+ERROR: [Labtoolstcl 44-142] There is no current hw_target and no option value given for 'hw_target'.
+disconnect_hw_server
+close_hw
+quit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 18:06:34 2023...

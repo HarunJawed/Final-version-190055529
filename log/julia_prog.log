@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Mar 31 15:55:31 2023
+# Process ID: 19873
+# Current directory: /users/1/190055529/DSH - FINAL YEAR/Final version 190055529
+# Command line: vivado -log log/julia_prog.log -nojournal -tempDir work -mode tcl
+# Log file: /users/1/190055529/DSH - FINAL YEAR/Final version 190055529/log/julia_prog.log
+# Journal file: 
+#-----------------------------------------------------------
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+set_property BITSTREAM.STARTUP.STARTUPCLK CCLK [current_design]
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D864A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROGRAM.FILE {julia.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D864A
+disconnect_hw_server
+close_hw
+quit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 15:55:43 2023...
