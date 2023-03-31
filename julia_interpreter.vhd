@@ -107,7 +107,7 @@ architecture impl of julia_interpreter is
       -- directly to a file so we need a register to hold the current
       -- address to be written to
 
-      load(reg_addr, 0),                      -- #1 load reg memory address destination
+      load(reg_addr, 0),                        -- #1 load reg memory address destination
 	
 
       -- HINT: you may wish to load the xscale and yscale constants
@@ -115,8 +115,8 @@ architecture impl of julia_interpreter is
       -- Don't forget to correctly scale the values to your fractional
       -- Arithmetic format.
 
-      load(reg_tmp_xscale, FxP(xscale)),		-- #2 Load reg_tmp_xscale in register as fixed point
-      load(reg_tmp_yscale, FxP(yscale)),		-- #3 Load reg_tmp_xscale in register as fixed point
+      load(reg_tmp_xscale, FxP(xscale)),	-- #2 Load reg_tmp_xscale in register as fixed point
+      load(reg_tmp_yscale, FxP(yscale)),	-- #3 Load reg_tmp_xscale in register as fixed point
   
       -- Procedural -- for y in 0 to N_y - 1 loop
       -- In assembler it is easier and more idiomatic to wound down to 0
@@ -154,7 +154,7 @@ architecture impl of julia_interpreter is
       -- Use registers to calculate (((z_r * z_r) + (z_i * z_i))
       -- I suggest keeping zr*zr and zi*zi as we will reuse these later
       -- in you fractional arithmetic format
-
+----------------------------------------------------------------------------------------------------------------------------
       fixed_mul(reg_zr, reg_z_real, reg_z_real, "i loop"),  --#15 stores z_r * z_r in reg_zr
       fixed_mul(reg_zi, reg_z_imag, reg_z_imag),	   --#16 stores z_i * z_i in reg_zi 
       
@@ -171,7 +171,7 @@ architecture impl of julia_interpreter is
       
       jmp_lt(reg_dlim, reg_z_ri , "end i loop"),	--#19 if reg_z_ri < reg_dlim jumps to the end of the loop     
 
-      
+----------------------------------------------------------------------------------------------------------------------------
       -- HINT: Calculate zr*zr-zi*zi and store in a register here
       
       sub(reg_zr, reg_zr, reg_zi),			--#20 store zr*zr-zi*zi in reg_zr, free's reg_zi
@@ -195,6 +195,8 @@ architecture impl of julia_interpreter is
        addi(reg_z_imag, FxP(c_i), reg_zr),		--#24 add dixed c_i to reg_zr
        							
 	
+
+
       -- Procedural: i=i-1
       
       addi(reg_i, -1, reg_i),						
